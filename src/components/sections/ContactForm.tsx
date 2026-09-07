@@ -45,22 +45,22 @@ export function ContactForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
           <label htmlFor="name" className="text-sm font-medium text-slate-700">Full Name *</label>
-          <Input id="name" required placeholder="John Doe" />
+          <Input id="name" required placeholder="Enter Your Full Name" />
         </div>
         <div className="space-y-2">
           <label htmlFor="business" className="text-sm font-medium text-slate-700">Business Name</label>
-          <Input id="business" placeholder="Your Company Ltd" />
+          <Input id="business" placeholder="Your Business Name" />
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
           <label htmlFor="email" className="text-sm font-medium text-slate-700">Email Address *</label>
-          <Input id="email" type="email" required placeholder="john@example.com" />
+          <Input id="email" type="email" required placeholder="Enter Your Email" />
         </div>
         <div className="space-y-2">
           <label htmlFor="phone" className="text-sm font-medium text-slate-700">Phone Number *</label>
-          <Input id="phone" type="tel" required placeholder="+1 (555) 000-0000" />
+          <Input id="phone" type="tel" required placeholder="Enter Your Number" />
         </div>
       </div>
 
@@ -102,9 +102,6 @@ export function ContactForm() {
         {isSubmitting ? 'Submitting...' : 'Request a Free Consultation'}
       </Button>
       
-      <p className="text-xs text-center text-slate-500 mt-4">
-        Your information is kept strictly confidential. We hate spam as much as you do.
-      </p>
     </form>
   );
 }

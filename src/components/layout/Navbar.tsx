@@ -119,7 +119,7 @@ export function Navbar() {
               </Button>
               <Button asChild variant="whatsapp" className="w-full justify-center">
                 <a 
-                  href="https://wa.me/15551234567" 
+                  href="https://wa.me/8777202487" 
                   target="_blank" 
                   rel="noreferrer"
                   onClick={() => trackEvent(TRACKING_EVENTS.WHATSAPP_CLICK, { location: 'mobile_menu' })}

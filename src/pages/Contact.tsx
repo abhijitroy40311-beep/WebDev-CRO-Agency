@@ -50,7 +50,7 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-slate-900">WhatsApp</h4>
                       <a 
-                        href="https://wa.me/15551234567" 
+                        href="https://wa.me/8777202487" 
                         target="_blank"
                         rel="noreferrer"
                         className="text-slate-600 hover:text-green-600"
@@ -66,7 +66,7 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-slate-900">Email</h4>
                       <a href="mailto:hello@yourdomain.com" className="text-slate-600 hover:text-blue-600">
-                        hello@yourdomain.com
+                        abhijitroy40311@gmail.com
                       </a>
                     </div>
                   </div>
@@ -76,8 +76,8 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-slate-900">Location</h4>
                       <p className="text-slate-600">
-                        123 Innovation Drive<br/>
-                        Tech City, CA 94103
+                        Madhyamgram 700130<br/>
+                        Kolkata, WB
                       </p>
                     </div>
                   </div>

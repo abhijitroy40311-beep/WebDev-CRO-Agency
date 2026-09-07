@@ -57,7 +57,7 @@ export default function Portfolio() {
       industry: "B2B Services",
       type: "Corporate Website",
       services: "UI/UX Design, CMS Integration",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-8777202487-d307ca884978?q=80&w=800&auto=format&fit=crop",
       result: "Results to be added after verified campaign/project data is available."
     }
   ];
