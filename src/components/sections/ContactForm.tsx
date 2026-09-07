@@ -86,10 +86,10 @@ export function ContactForm() {
           className="flex h-10 w-full rounded-md border border-slate-300 bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
         >
           <option value="">Select budget range</option>
-          <option value="1k-3k">$1,000 - $3,000</option>
-          <option value="3k-5k">$3,000 - $5,000</option>
-          <option value="5k-10k">$5,000 - $10,000</option>
-          <option value="10k+">$10,000+</option>
+          <option value="1k-3k">₹1,000 - ₹3,000</option>
+          <option value="3k-5k">₹3,000 - ₹5,000</option>
+          <option value="5k-10k">₹5,000 - ₹10,000</option>
+          <option value="10k+">₹10,000+</option>
         </select>
       </div>
 

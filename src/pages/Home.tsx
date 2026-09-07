@@ -31,7 +31,7 @@ export default function Home() {
               </Button>
               <Button asChild variant="whatsapp" size="lg" className="w-full sm:w-auto">
                 <a 
-                  href="https://wa.me/15551234567" 
+                  href="https://wa.me/8777202487" 
                   target="_blank" 
                   rel="noreferrer"
                   onClick={() => trackEvent(TRACKING_EVENTS.WHATSAPP_CLICK, { location: 'hero' })}
@@ -42,7 +42,7 @@ export default function Home() {
               </Button>
             </div>
             <div className="mt-6 text-sm text-slate-500 font-medium">
-              Call us directly: <a href="tel:+15551234567" className="text-blue-600 hover:underline">+1 (555) 123-4567</a>
+              Call us directly: <a href="tel:+91 8777202487" className="text-blue-600 hover:underline">+91 8777202487</a>
             </div>
           </div>
 
@@ -305,7 +305,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-slate-900 mb-2">Starter Website</h3>
               <p className="text-slate-500 text-sm mb-6">Perfect for small local businesses.</p>
               <div className="mb-6">
-                <span className="text-3xl font-extrabold text-slate-900">$999</span>
+                <span className="text-3xl font-extrabold text-slate-900">₹999</span>
               </div>
               <ul className="space-y-3 mb-8 text-sm text-slate-700">
                 <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0"/> Up to 5 Pages</li>
@@ -326,7 +326,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-2">Growth Website</h3>
               <p className="text-slate-400 text-sm mb-6">For businesses actively running ads.</p>
               <div className="mb-6">
-                <span className="text-3xl font-extrabold">$1,499</span>
+                <span className="text-3xl font-extrabold">₹1,499</span>
               </div>
               <ul className="space-y-3 mb-8 text-sm text-slate-300">
                 <li className="flex"><CheckCircle2 className="h-5 w-5 text-blue-400 mr-2 shrink-0"/> Up to 10 Pages</li>
@@ -344,7 +344,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-slate-900 mb-2">Premium Website</h3>
               <p className="text-slate-500 text-sm mb-6">Complete digital presence & store.</p>
               <div className="mb-6">
-                <span className="text-3xl font-extrabold text-slate-900">$2,499</span>
+                <span className="text-3xl font-extrabold text-slate-900">₹2,499</span>
               </div>
               <ul className="space-y-3 mb-8 text-sm text-slate-700">
                 <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0"/> E-commerce Capability</li>

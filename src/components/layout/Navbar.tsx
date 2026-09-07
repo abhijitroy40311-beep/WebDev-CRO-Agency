@@ -43,7 +43,7 @@ export function Navbar() {
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center space-x-4">
             <a 
-              href="tel:+15551234567" 
+              href="tel:+91 8777202487" 
               className="text-slate-600 hover:text-slate-900 transition-colors"
               aria-label="Call Us"
               onClick={() => trackEvent(TRACKING_EVENTS.PHONE_CLICK, { location: 'navbar' })}
@@ -52,7 +52,7 @@ export function Navbar() {
             </a>
             <Button asChild variant="outline" size="sm">
               <a 
-                href="https://wa.me/15551234567" 
+                href="https://wa.me/8777202487" 
                 target="_blank" 
                 rel="noreferrer"
                 onClick={() => trackEvent(TRACKING_EVENTS.WHATSAPP_CLICK, { location: 'navbar' })}
@@ -69,7 +69,7 @@ export function Navbar() {
           {/* Mobile menu button */}
           <div className="flex md:hidden items-center space-x-4">
             <a 
-              href="tel:+15551234567" 
+              href="tel:91 8777202487" 
               className="text-slate-600"
               aria-label="Call Us"
               onClick={() => trackEvent(TRACKING_EVENTS.PHONE_CLICK, { location: 'navbar_mobile' })}

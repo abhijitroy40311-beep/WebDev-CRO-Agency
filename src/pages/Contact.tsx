@@ -36,11 +36,11 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-slate-900">Phone</h4>
                       <a 
-                        href="tel:+15551234567" 
+                        href="tel:+91 8777202487" 
                         className="text-slate-600 hover:text-blue-600"
                         onClick={() => trackEvent(TRACKING_EVENTS.PHONE_CLICK, { location: 'contact_page' })}
                       >
-                        +1 (555) 123-4567
+                        +91 8777202487
                       </a>
                     </div>
                   </div>

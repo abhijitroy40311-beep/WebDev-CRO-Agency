@@ -50,17 +50,17 @@ export function Footer() {
               </li>
               <li>
                 <a 
-                  href="tel:+15551234567" 
+                  href="tel:8777202487" 
                   className="flex items-center hover:text-white transition-colors"
                   onClick={() => trackEvent(TRACKING_EVENTS.PHONE_CLICK, { location: 'footer' })}
                 >
                   <Phone className="h-5 w-5 mr-2 text-slate-500" />
-                  +1 (555) 123-4567
+                  +91 8777202487
                 </a>
               </li>
               <li>
                 <a 
-                  href="https://wa.me/15551234567" 
+                  href="https://wa.me/8777202487" 
                   target="_blank" 
                   rel="noreferrer"
                   className="flex items-center hover:text-white transition-colors"
