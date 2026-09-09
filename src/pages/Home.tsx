@@ -8,11 +8,33 @@ import { ArrowRight, CheckCircle2, Globe, MonitorSmartphone, Zap, Search, Messag
 import { trackEvent, TRACKING_EVENTS } from '../lib/tracking';
 
 export default function Home() {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "WebDev & CRO Agency",
+    "image": "https://web-dev-agencycom.vercel.app/og-image.jpg",
+    "url": "https://web-dev-agencycom.vercel.app",
+    "telephone": "+15551234567",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Innovation Drive",
+      "addressLocality": "Tech City",
+      "addressRegion": "CA",
+      "postalCode": "94103",
+      "addressCountry": "US"
+    },
+    "priceRange": "$$$",
+    "description": "Professional Website Design & Development for Small Businesses and Growing Businesses."
+  };
+
   return (
     <>
-      <SEO 
-        title="Professional Website Design & Development for Businesses" 
-        description="Modern websites designed to build credibility, generate enquiries, and help businesses grow online. Get a free consultation today." 
+      <SEO
+        title="Professional Website Design & Development for Businesses"
+        description="Modern websites designed to build credibility, generate enquiries, and help businesses grow online. Get a free consultation today."
+        canonicalUrl="https://web-dev-agencycom.vercel.app/page"
+        keywords="website design, web development, CRO agency, local business websites, ecommerce development"
+        schema={localBusinessSchema}
       />
 
       {/* Hero Section */}
@@ -30,9 +52,9 @@ export default function Home() {
                 <Link to="/contact">Get a Free Website Consultation</Link>
               </Button>
               <Button asChild variant="whatsapp" size="lg" className="w-full sm:w-auto">
-                <a 
-                  href="https://wa.me/8777202487" 
-                  target="_blank" 
+                <a
+                  href="https://wa.me/15551234567"
+                  target="_blank"
                   rel="noreferrer"
                   onClick={() => trackEvent(TRACKING_EVENTS.WHATSAPP_CLICK, { location: 'hero' })}
                 >
@@ -42,27 +64,27 @@ export default function Home() {
               </Button>
             </div>
             <div className="mt-6 text-sm text-slate-500 font-medium">
-              Call us directly: <a href="tel:+91 8777202487" className="text-blue-600 hover:underline">+91 8777202487</a>
+              Call us directly: <a href="tel:+15551234567" className="text-blue-600 hover:underline">+1 (555) 123-4567</a>
             </div>
           </div>
 
           {/* Hero Visual Mockup */}
           <div className="mt-16 mx-auto max-w-5xl relative rounded-xl shadow-2xl bg-white p-2 border border-slate-200">
             <div className="aspect-[16/9] bg-slate-100 rounded-lg overflow-hidden flex flex-col relative">
-               {/* Decorative Browser Bar */}
-               <div className="h-8 bg-slate-200 flex items-center px-4 space-x-2 shrink-0 z-10 relative">
-                 <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                 <div className="w-3 h-3 rounded-full bg-amber-400"></div>
-                 <div className="w-3 h-3 rounded-full bg-green-400"></div>
-               </div>
-               <div className="flex-1 relative bg-slate-800">
-                  <img 
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" 
-                    alt="Professional Website Mockup" 
-                    className="w-full h-full object-cover" 
-                    referrerPolicy="no-referrer" 
-                  />
-               </div>
+              {/* Decorative Browser Bar */}
+              <div className="h-8 bg-slate-200 flex items-center px-4 space-x-2 shrink-0 z-10 relative">
+                <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                <div className="w-3 h-3 rounded-full bg-amber-400"></div>
+                <div className="w-3 h-3 rounded-full bg-green-400"></div>
+              </div>
+              <div className="flex-1 relative bg-slate-800">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+                  alt="Professional Website Mockup"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -158,7 +180,7 @@ export default function Home() {
             <div>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Designed to Deliver Business Results</h2>
               <p className="text-lg text-slate-600 mb-8">We don't just build websites; we build business tools. Every design decision is made with one goal: to help your business grow.</p>
-              
+
               <ul className="space-y-6">
                 <li className="flex items-start">
                   <CheckCircle2 className="h-6 w-6 text-green-500 mr-4 shrink-0" />
@@ -183,25 +205,25 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-4">
-               {/* Tech/Benefit visual cards */}
-               <Card className="p-6 bg-slate-50 border-0 shadow-sm flex flex-col items-center text-center">
-                 <MonitorSmartphone className="h-10 w-10 text-blue-600 mb-4" />
-                 <span className="font-semibold">Mobile-First</span>
-               </Card>
-               <Card className="p-6 bg-slate-50 border-0 shadow-sm flex flex-col items-center text-center mt-8">
-                 <Zap className="h-10 w-10 text-amber-500 mb-4" />
-                 <span className="font-semibold">Fast Loading</span>
-               </Card>
-               <Card className="p-6 bg-slate-50 border-0 shadow-sm flex flex-col items-center text-center -mt-8">
-                 <ShieldCheck className="h-10 w-10 text-green-600 mb-4" />
-                 <span className="font-semibold">Secure & Reliable</span>
-               </Card>
-               <Card className="p-6 bg-slate-50 border-0 shadow-sm flex flex-col items-center text-center">
-                 <BarChart3 className="h-10 w-10 text-purple-600 mb-4" />
-                 <span className="font-semibold">Analytics Ready</span>
-               </Card>
+              {/* Tech/Benefit visual cards */}
+              <Card className="p-6 bg-slate-50 border-0 shadow-sm flex flex-col items-center text-center">
+                <MonitorSmartphone className="h-10 w-10 text-blue-600 mb-4" />
+                <span className="font-semibold">Mobile-First</span>
+              </Card>
+              <Card className="p-6 bg-slate-50 border-0 shadow-sm flex flex-col items-center text-center mt-8">
+                <Zap className="h-10 w-10 text-amber-500 mb-4" />
+                <span className="font-semibold">Fast Loading</span>
+              </Card>
+              <Card className="p-6 bg-slate-50 border-0 shadow-sm flex flex-col items-center text-center -mt-8">
+                <ShieldCheck className="h-10 w-10 text-green-600 mb-4" />
+                <span className="font-semibold">Secure & Reliable</span>
+              </Card>
+              <Card className="p-6 bg-slate-50 border-0 shadow-sm flex flex-col items-center text-center">
+                <BarChart3 className="h-10 w-10 text-purple-600 mb-4" />
+                <span className="font-semibold">Analytics Ready</span>
+              </Card>
             </div>
           </div>
         </div>
@@ -223,9 +245,9 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="overflow-hidden border-slate-700 bg-slate-800 group">
               <div className="aspect-[16/9] overflow-hidden relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop" 
-                  alt="Apex Dental Clinic" 
+                <img
+                  src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop"
+                  alt="Apex Dental Clinic"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
@@ -236,12 +258,12 @@ export default function Home() {
                 <p className="text-sm text-slate-400">Business Website & Local SEO</p>
               </div>
             </Card>
-            
+
             <Card className="overflow-hidden border-slate-700 bg-slate-800 group">
               <div className="aspect-[16/9] overflow-hidden relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop" 
-                  alt="Summit Real Estate" 
+                <img
+                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop"
+                  alt="Summit Real Estate"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
@@ -265,28 +287,28 @@ export default function Home() {
           </div>
 
           <div className="max-w-4xl mx-auto relative">
-             <div className="absolute left-[19px] top-4 bottom-4 w-0.5 bg-blue-200 hidden md:block"></div>
-             
-             {[
-               { title: "Discovery & Strategy", desc: "We discuss your business goals, target audience, and what you want the website to achieve." },
-               { title: "Design & Content", desc: "We create a conversion-focused layout and help structure your content for maximum impact." },
-               { title: "Development", desc: "We build the website using modern, fast, and mobile-friendly technologies." },
-               { title: "Review & Refine", desc: "You review the site. We make revisions to ensure everything is perfect." },
-               { title: "Launch & Support", desc: "We deploy your site securely and set up tracking (GA4/GTM) so you can measure results." }
-             ].map((step, idx) => (
-               <div key={idx} className="flex flex-col md:flex-row mb-12 last:mb-0 relative">
-                 <div className="hidden md:flex flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 text-white items-center justify-center font-bold z-10 border-4 border-slate-50">
-                   {idx + 1}
-                 </div>
-                 <div className="md:ml-8 bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex-1">
-                   <h3 className="text-xl font-bold text-slate-900 mb-2">
-                     <span className="md:hidden text-blue-600 mr-2">{idx + 1}.</span> 
-                     {step.title}
-                   </h3>
-                   <p className="text-slate-600">{step.desc}</p>
-                 </div>
-               </div>
-             ))}
+            <div className="absolute left-[19px] top-4 bottom-4 w-0.5 bg-blue-200 hidden md:block"></div>
+
+            {[
+              { title: "Discovery & Strategy", desc: "We discuss your business goals, target audience, and what you want the website to achieve." },
+              { title: "Design & Content", desc: "We create a conversion-focused layout and help structure your content for maximum impact." },
+              { title: "Development", desc: "We build the website using modern, fast, and mobile-friendly technologies." },
+              { title: "Review & Refine", desc: "You review the site. We make revisions to ensure everything is perfect." },
+              { title: "Launch & Support", desc: "We deploy your site securely and set up tracking (GA4/GTM) so you can measure results." }
+            ].map((step, idx) => (
+              <div key={idx} className="flex flex-col md:flex-row mb-12 last:mb-0 relative">
+                <div className="hidden md:flex flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 text-white items-center justify-center font-bold z-10 border-4 border-slate-50">
+                  {idx + 1}
+                </div>
+                <div className="md:ml-8 bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex-1">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                    <span className="md:hidden text-blue-600 mr-2">{idx + 1}.</span>
+                    {step.title}
+                  </h3>
+                  <p className="text-slate-600">{step.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -305,13 +327,13 @@ export default function Home() {
               <h3 className="text-xl font-bold text-slate-900 mb-2">Starter Website</h3>
               <p className="text-slate-500 text-sm mb-6">Perfect for small local businesses.</p>
               <div className="mb-6">
-                <span className="text-3xl font-extrabold text-slate-900">₹999</span>
+                <span className="text-3xl font-extrabold text-slate-900">$999</span>
               </div>
               <ul className="space-y-3 mb-8 text-sm text-slate-700">
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0"/> Up to 5 Pages</li>
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0"/> Mobile Responsive</li>
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0"/> Contact Form</li>
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0"/> WhatsApp Integration</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0" /> Up to 5 Pages</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0" /> Mobile Responsive</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0" /> Contact Form</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0" /> WhatsApp Integration</li>
               </ul>
               <Button asChild variant="outline" className="w-full">
                 <Link to="/contact">Get Started</Link>
@@ -326,13 +348,13 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-2">Growth Website</h3>
               <p className="text-slate-400 text-sm mb-6">For businesses actively running ads.</p>
               <div className="mb-6">
-                <span className="text-3xl font-extrabold">₹1,499</span>
+                <span className="text-3xl font-extrabold">$1,499</span>
               </div>
               <ul className="space-y-3 mb-8 text-sm text-slate-300">
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-blue-400 mr-2 shrink-0"/> Up to 10 Pages</li>
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-blue-400 mr-2 shrink-0"/> Dedicated Landing Page</li>
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-blue-400 mr-2 shrink-0"/> GA4 & Tracking Setup</li>
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-blue-400 mr-2 shrink-0"/> Basic SEO Setup</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-blue-400 mr-2 shrink-0" /> Up to 10 Pages</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-blue-400 mr-2 shrink-0" /> Dedicated Landing Page</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-blue-400 mr-2 shrink-0" /> GA4 & Tracking Setup</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-blue-400 mr-2 shrink-0" /> Basic SEO Setup</li>
               </ul>
               <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white">
                 <Link to="/contact">Get Started</Link>
@@ -344,13 +366,13 @@ export default function Home() {
               <h3 className="text-xl font-bold text-slate-900 mb-2">Premium Website</h3>
               <p className="text-slate-500 text-sm mb-6">Complete digital presence & store.</p>
               <div className="mb-6">
-                <span className="text-3xl font-extrabold text-slate-900">₹2,499</span>
+                <span className="text-3xl font-extrabold text-slate-900">$2,499</span>
               </div>
               <ul className="space-y-3 mb-8 text-sm text-slate-700">
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0"/> E-commerce Capability</li>
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0"/> Payment Gateway</li>
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0"/> Advanced SEO</li>
-                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0"/> 3 Months Support</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0" /> E-commerce Capability</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0" /> Payment Gateway</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0" /> Advanced SEO</li>
+                <li className="flex"><CheckCircle2 className="h-5 w-5 text-green-500 mr-2 shrink-0" /> 3 Months Support</li>
               </ul>
               <Button asChild variant="outline" className="w-full">
                 <Link to="/contact">Get Started</Link>
